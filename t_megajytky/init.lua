@@ -44,9 +44,9 @@ megajytky_boom = function(pos, time)
 			end
 		end
 		
-		for dx=-8,8 do
-			for dz=-8,8 do
-				for dy=8,-8,-1 do
+		for dx=-3,3 do
+			for dz=-3,3 do
+				for dy=0,-20,-1 do
 					pos.x = pos.x+dx
 					pos.y = pos.y+dy
 					pos.z = pos.z+dz
