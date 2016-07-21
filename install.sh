@@ -5,7 +5,7 @@ GIT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 MODS=( tnt t_autorepair t_death t_jytky t_megajytky t_repair )
 
 for i in "${MODS[@]}"; do
-    if [ -d "$GIT_DIR/$i" ] && [ -n "$i" ] && ! [ -L "$MODS_DIR/$i" ]; then
+    if [ -d "$GIT_DIR/$i" ] && [ -n "$i" ]; then
 	if [ -d "$MODS_DIR/$i" ]; then
 	    rm -r "$MODS_DIR/$i";
 	fi
