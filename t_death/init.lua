@@ -1,8 +1,9 @@
 minetest.register_on_dieplayer(function(player)
-      minetest.chat_send_all(player:get_player_name().." died.")
-      minetest.chat_send_player(player:get_player_name(), "Voi voi :( Ota omena.")
+      pos = player:getpos()
+      name = player:get_player_name()
+      minetest.chat_send_all(name .. " died at (" .. math.floor(pos.x) .. ", " .. math.floor(pos.y) ..  ", " .. math.floor(pos.z) .. ")." )
 	minetest.sound_play("mario", {
-		pos = player:getpos(),
+		pos = pos,
 		max_hear_distance = 100,
 		gain = 10.0,
 })
