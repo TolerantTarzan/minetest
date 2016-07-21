@@ -12,7 +12,8 @@ local destroy = function(pos)
 		local drop = minetest.get_node_drops(nodename, "")
 		for _,item in ipairs(drop) do
 		    if type(item) == "string" then
-		        if item ~= "default:cobble" and item ~= "default:dirt" and item ~= "default:gravel" and item ~= "default:flint" then
+		       if item ~= "default:cobble" and item ~= "default:dirt" and item ~= "default:gravel"
+		       and item ~= "default:flint" and item ~= "default:mossycobble" then
 			   local obj = minetest.env:add_item(pos, item)
 			end
 		    end
