@@ -121,7 +121,7 @@ minetest.register_node("t_megajytky:t_megajytky_burning", {
 
 minetest.register_node("t_megajytky:megajytky_boom", {
 	drawtype = "plantlike",
-	tiles = {"t_vmegajytky_boom.png"},
+	tiles = {"t_megajytky_boom.png"},
 	light_source = LIGHT_MAX,
 	walkable = false,
 	drop = "",
